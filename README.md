@@ -1,13 +1,11 @@
 # Signature Animation
 
-A React component for animating handwriting using SVG paths.
+A React component for animating handwriting. It leverages SVG paths to create smooth stroke animations, making it ideal for signature effects, handwritten-style logos, and creative UI designs.
 
 ## Features
 
 - Animate handwritten signatures or letters using SVG.
 - Lightweight and easy to integrate into any React project.
-
-![Frontend_System_Design_Questions__Toast_Component___HLD_LLD](https://github.com/piyush-eon/react-toast-popup/assets/51760520/be023ecf-39fb-4cb0-beeb-98519050ba99)
 
 ## Installation
 
@@ -61,11 +59,11 @@ triggerNotification({
 | Prop      | Type   | Default   | Description                           |
 | --------- | ------ | --------- | ------------------------------------- |
 | children  | string | `"Hello"` | The text to animate as handwriting.   |
-| className | string | `""`      | Custom class for styling.             |
+| className | string | `""`      | Custom class for styling. (upcoming)  |
 | duration  | number | `1.5`     | Duration of the animation in seconds. |
 
 ```jsx
-git clone https://github.com/Ayo-Osota/signature-animation.git
+git clone  https://github.com/Ayo-Osota/signature-animation.git
 cd signature-animation
 npm install
 npm run build
@@ -74,3 +72,7 @@ npm run build
 ## License
 
 This project is licensed under the MIT License.
+
+## Acknowledgement
+
+This code was inspired by a project on [CodePen](https://codepen.io/kiranpate1/pen/ExBpaeW).

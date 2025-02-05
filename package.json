@@ -1,6 +1,6 @@
 {
   "name": "signature-animation",
-  "version": "1.1.5",
+  "version": "1.0.0",
   "description": "Signature Animation is a lightweight React component that animates text as if it is being handwritten.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/piyush-eon/react-toast-popup.git"
+    "url": " https://github.com/Ayo-Osota/signature-animation.git"
   },
   "keywords": [
     "react",
