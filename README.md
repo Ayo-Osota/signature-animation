@@ -39,31 +39,14 @@ function App() {
 export default App;
 ```
 
-#### Animations
-
-You can specify an animation type for the notifications. The available animations are:
-
-- "fade"
-- "pop"
-- "slide"
-
-```jsx
-triggerNotification({
-  type: "success",
-  message: "This is a success message with a pop animation!",
-  duration: 3000,
-  animation: "pop",
-});
-```
-
 ## Props
 
-| Prop      | Type   | Default   | Description                                        |
-| --------- | ------ | --------- | -------------------------------------------------- |
-| children  | string | `"Hello"` | The text to animate as handwriting.                |
-| className | string | `""`      | Custom class for styling. (upcoming)               |
-| duration  | number | `1`       | Duration of the animation in seconds.              |
-| delay     | number | `0`       | Delay between letters of the animation in seconds. |
+| Prop      | Type   | Default | Description                                        |
+| --------- | ------ | ------- | -------------------------------------------------- |
+| children  | string | `""`    | The text to animate as handwriting.                |
+| className | string | `""`    | Custom class for styling. (upcoming)               |
+| duration  | number | `1`     | Duration of the animation in seconds.              |
+| delay     | number | `0`     | Delay between letters of the animation in seconds. |
 
 ```jsx
 git clone  https://github.com/Ayo-Osota/signature-animation.git
