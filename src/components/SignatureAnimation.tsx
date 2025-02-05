@@ -5,11 +5,13 @@ import "../App.css";
 interface SignatureAnimationProps {
   children: string;
   duration?: number;
+  delay?: number;
 }
 
 function SignatureAnimation({
   children,
   duration = 1,
+  delay = 0,
 }: SignatureAnimationProps) {
   const signRef = useRef<HTMLDivElement>(null);
   const text = children.split("");
@@ -24,6 +26,7 @@ function SignatureAnimation({
 
       for (let i = 0; i < letterDivs.length; i++) {
         const paths = letterDivs[i].querySelectorAll("path");
+        console.log("cna i log");
 
         for (const path of Array.from(paths)) {
           const length = path.getTotalLength();
@@ -39,14 +42,16 @@ function SignatureAnimation({
           });
         }
 
-        await new Promise((resolve) =>
-          setTimeout(resolve, duration * 1000 + 300)
-        );
+        if (delay > 0) {
+          console.log("delay", delay);
+
+          await new Promise((resolve) => setTimeout(resolve, delay * 1000));
+        }
       }
     }
 
     animateLetters();
-  }, [text, duration]);
+  }, [text, duration, delay]);
 
   return (
     <div className="signature-main" ref={signRef}>

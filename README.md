@@ -29,7 +29,9 @@ function App() {
   return (
     <div>
       <h1>Signature Animation Demo</h1>
-      <SignatureAnimation>Hello</SignatureAnimation>
+      <SignatureAnimation duration={1} delay={0.3}>
+        Make AY the sun shine
+      </SignatureAnimation>
     </div>
   );
 }
@@ -56,11 +58,12 @@ triggerNotification({
 
 ## Props
 
-| Prop      | Type   | Default   | Description                           |
-| --------- | ------ | --------- | ------------------------------------- |
-| children  | string | `"Hello"` | The text to animate as handwriting.   |
-| className | string | `""`      | Custom class for styling. (upcoming)  |
-| duration  | number | `1.5`     | Duration of the animation in seconds. |
+| Prop      | Type   | Default   | Description                                        |
+| --------- | ------ | --------- | -------------------------------------------------- |
+| children  | string | `"Hello"` | The text to animate as handwriting.                |
+| className | string | `""`      | Custom class for styling. (upcoming)               |
+| duration  | number | `1`       | Duration of the animation in seconds.              |
+| delay     | number | `0`       | Delay between letters of the animation in seconds. |
 
 ```jsx
 git clone  https://github.com/Ayo-Osota/signature-animation.git

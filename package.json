@@ -1,6 +1,6 @@
 {
   "name": "signature-animation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Signature Animation is a lightweight React component that animates text as if it is being handwritten.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
