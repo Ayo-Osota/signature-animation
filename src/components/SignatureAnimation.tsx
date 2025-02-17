@@ -26,7 +26,6 @@ function SignatureAnimation({
 
       for (let i = 0; i < letterDivs.length; i++) {
         const paths = letterDivs[i].querySelectorAll("path");
-        console.log("cna i log");
 
         for (const path of Array.from(paths)) {
           const length = path.getTotalLength();
@@ -43,8 +42,6 @@ function SignatureAnimation({
         }
 
         if (delay > 0) {
-          console.log("delay", delay);
-
           await new Promise((resolve) => setTimeout(resolve, delay * 1000));
         }
       }
